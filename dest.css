@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('starter-code/assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    color: white;
+    font-family:Barlow Condensed, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+nav{
+    height: 95px;
+    background: hsla(0,0%,100%,.05);
+    width: 750px;
+    margin-right: -650px;
+    margin-top: 10px;
+}
+header{
+    display: flex;
+    padding: 15px;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline;
+    margin-left: 50px;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+nav ul li {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    left:50%;
+    bottom: 0px;
+    width: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.541);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+nav ul li:hover::after,
+nav ul li:focus::after{
+    width: 100%;
+}
+
+header img{
+    position: absolute;
+    left:60px;
+    top:50px;
+}
+header p {
+    position: absolute;
+    top:74px;
+    left:140px;
+    z-index: 1;
+}
+span{
+    font-weight: 510;
+    font-size: 19px;
+    margin-right: 7px;
+}
+.sect1{
+    display: flex;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: relative;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.hm{
+    border-bottom: solid 3px white;
+    line-height: 4.5;
+    margin-top: -33px;
+    z-index: 1;
+    margin-left: 50px;
+}
+#planetTravel{
+    font-size: 35px;
+}
+#planetDistance{
+    font-size: 35px;
+}
+.sect1{
+    display: flex;
+    gap:60px;
+}
+.container{
+    display: flex;
+    gap:60px;
+}
